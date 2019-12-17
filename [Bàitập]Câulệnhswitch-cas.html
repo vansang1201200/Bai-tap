@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="num" min="1" max="12">
+    <button type="button" onclick="tinhngay()">tính số ngày</button>
+    <p id='num1'></p>
+    <script>
+        function tinhngay() {
+            let a = parseInt(document.getElementById("num").value);
+            switch (a) {
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.getElementById('num1').innerHTML = ('Tháng ' + a + " có 30 ngày");
+                    break;
+                case 2:
+                    document.getElementById('num1').innerHTML = ('Tháng ' + a + "có 28 hoặc 29 ngày");
+                    break;
+                default:
+                    document.getElementById('num1').innerHTML = ('Tháng ' + a + " có 30 ngày")
+            }
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
