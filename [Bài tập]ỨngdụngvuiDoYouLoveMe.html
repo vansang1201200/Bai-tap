@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="position: relative; top: 80px; left: 50px;">Do you love me?</h1>
+    <button type="button" value="yes" onclick="yesclick()" style="position: relative; top: 100px; left: 50px;">yes</button>
+    <button type="button" id='no' onmouseover="noclick()" value ="Không" style="position: relative; top: 100px; left: 60px;">no</button>
+    <script>
+    function yesclick() {
+        alert ("yêu");
+
+    }
+    function noclick(){
+        let a = document.getElementById("no");
+        let x = Math.round(Math.random() * innerWidth);
+        let y = Math.round(Math.random() * innerHeight);
+        a.style.left= y + 'px';
+        a.style.top = x + 'px';
+    }
+    
+    </script>
+
+    
+    
+</body>
+</html>
