@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="pheptinh">
+    <p>máy tính cơ bản</p>
+    <table>
+        <tr>
+            <td colspan='4'><input type="text" name="hienthi" disabled> </td>
+        <tr>
+            <td> <input type="button" value="1" onclick="pheptinh.hienthi.value+=1"></td>
+            <td> <input type="button" value="2" onclick="pheptinh.hienthi.value +=2"></td>
+            <td> <input type="button" value="3" onclick="pheptinh.hienthi.value +=3"></td>
+            <td> <input type="button" class="pheptinh" value="+" onclick="pheptinh.hienthi.value += '+'"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="pheptinh.hienthi.value +=4"></td>
+            <td> <input type="button" value="5" onclick="pheptinh.hienthi.value +=5"></td>
+            <td> <input type="button" value="6" onclick="pheptinh.hienthi.value +=6"></td>
+            <td> <input type="button" class="pheptinh" value='-' onclick="pheptinh.hienthi.value +='-'"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="pheptinh.hienthi.value +=7"></td>
+            <td> <input type="button" value="8" onclick="pheptinh.hienthi.value +=8"></td>
+            <td> <input type="button" value="9" onclick="pheptinh.hienthi.value +=9"></td>
+            <td> <input type="button" class="pheptinh" value='*' onclick="pheptinh.hienthi.value += '*'"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" class="pheptinh "value="C" onclick="pheptinh.hienthi.value +=''"></td>
+            <td> <input type="button" value="0" onclick="pheptinh.hienthi.value +=0"></td>
+            <td> <input type="button" class="pheptinh" value="=" onclick="pheptinh.hienthi.value=eval(pheptinh.hienthi.value)"></td>>
+            <td> <input type="button" class="pheptinh "value="/" onclick="pheptinh.hienthi.value +=''"></td>
+        </tr>
+        
+
+    </table>
+
+</body>
+
+</html>
