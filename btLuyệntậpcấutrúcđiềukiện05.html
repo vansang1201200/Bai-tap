@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("nhập điểm kiểm tra"));
+        let b = parseInt(prompt("nhập điểm giữa kì"));
+        let c = parseInt(prompt("nhập điểm cuối kì"));
+        let dtb = (a + b + (c * 2)) / 4;
+        if (dtb >= 8) {
+            alert("học sinh giỏi");
+        }
+        else if (dtb < 8 && dtb >= 6) {
+            alert("học sinh khá");
+        }
+        else if (dtb < 6 && dtb >= 5) {
+            alert("học sinh trung bình");
+        }
+        else {
+            alert ("ở lại luôn");
+        }
+    </script>
+</body>
+
+</html>
