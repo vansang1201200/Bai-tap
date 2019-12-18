@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=parseInt(prompt("nhập doanh thu"));
+        let luong=1000000;
+    let hoa_hong=0;
+    let hoa_hong1=(luong*1)/100;
+    let hoa_hong2=(luong*2)/100;
+    if (a>2000) {
+        hoa_hong=hoa_hong+hoa_hong2*a;
+        alert(hoa_hong);
+    }
+    else if (a>1000){
+        hoa_hong=hoa_hong1*a +hoa_hong;
+        alert(hoa_hong);
+    }
+    else {
+        alert ("k có hoa hồng");
+    }
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
